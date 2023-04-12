@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abhishek form</title>
+</head>
+
+<style>
+*{
+  font-family: gabriola;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1; 
+}
+
+body{
+  background-color: rgb(87, 224, 248);
+}
+
+.login-box {
+  margin: auto;
+  width: 300px;
+  padding: 40px;
+  background: rgba(77, 110, 87, 0.987);
+  box-shadow: 10px 20px 20px  rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  background: transparent
+  
+}
+
+
+
+.login-box form .btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.11);
+  transition: 0.4s ease;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  border: none;
+  border-radius: 20px; 
+}
+
+.login-box .btn:hover {
+  background: #3af0e7;
+  color: #000000;
+  border-radius: 20px;
+  box-shadow: 10px 10px 60px  #24cfc7,
+              -10px -10px 60px  #24cfc7;
+
+            
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+</style>
+
+
+
+<body>
+  <center>
+<h1 align=center style="color: rgb(0, 0, 0);"><b><u>Registration Form</u></b></h1>
+
+<div class="login-box">
+ 
+  <form action="C:/xampp/htdocs/base/conn.php" method="post" >
+    <div class="user-box">
+      <input required="" name="name" type="text" placeholder="User Name">
+      <label></label>
+    </div>
+
+    <div class="user-box">
+      <input required="" type="email" name="email" placeholder="Email" >
+        
+    </div>
+    
+    <div class="user-box">
+      <input type="tel" pattern="[0-9]{10}" required="" name="contact" placeholder="Contact Number">
+      
+    </div>
+
+    <div class="user-box">
+      <input required="" type="password" name="password" placeholder="Password">
+      
+    </div>
+    <center>
+    <input type="submit" class="btn ">
+    </center>
+    
+  </center>
+  
+
+
+  </form>
+</div>
+
+
+  
+</body>
+</html>
